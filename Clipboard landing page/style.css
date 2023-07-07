@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    position: relative;
+    overflow:none;
+}
+.section1, .section2, .section4, .section7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3, .section5, .section6, footer{
+    display: flex;
+}
+.section1{
+    margin-bottom:80px;
+}
+.section2, .section4, .section5{
+    margin-bottom:50px;
+}
+.section3{
+    justify-content: space-around;
+    margin-bottom:200px;
+}
+.section5, .section6{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section6{
+    margin-top:50px;
+    margin-bottom:100px;
+}
+.section7{
+    margin-bottom:100px;
+}
+footer{
+    background:hsl(210, 9%, 96%);
+    justify-content: space-evenly;
+    align-items:start;
+    padding-top:50px;
+    padding-bottom:40px;
+}
+h1{
+    font-size:33px;
+    margin-bottom:15px;
+}
+h2{
+    font-size:27px;
+    margin-bottom:15px;
+}
+h3{
+    margin-bottom:7px;
+}
+p{
+    width:560px;
+    font-size: 16px;
+    color:hsl(201, 11%, 66%);
+    line-height:1.7;
+}
+h1, h2, h3{
+    color:hsl(210, 10%, 33%);
+}
+.logo1{
+    width:80px;
+    margin-top:70px;
+    margin-bottom:40px;
+}
+.logo2{
+    width:50px;
+}
+.downIos, .downMac{
+    color:white;
+    border:none;
+    border-radius:20px;
+    padding:12px 30px;
+    margin-right:10px;
+}
+.buttons{
+    margin-top:30px;
+}
+.downMac{
+    background:hsl(233, 100%, 69%);
+    box-shadow: 0 4px 8px 0 rgba(97, 115, 255, 0.793);
+}
+.downIos{
+    background:hsl(171, 66%, 44%);
+    box-shadow: 0 4px 8px 0 rgba(39, 184, 162, 0.46);
+}
+.computer{
+    position: absolute;
+    width:700px;
+    left:-2%;
+}
+.tablet{
+    margin-top:50px;
+}
+.section5img{
+  margin-bottom:20px;
+}
+.container2{
+    text-align: start;
+}
+.section3paragraphs, .section5paragraph{
+  width:340px;
+}
+.section3SubDiv{
+    margin-bottom:10px;
+    padding-top:50px;
+}
+ul{
+    list-style: none;
+    text-align: start;
+    color:hsl(210, 10%, 33%);
+}
+li{
+    margin-bottom:15px;
+}
+.icons{
+    margin-top:20px;
+}
+.fb, .twitter, .ig{
+    background: none;
+    color:hsl(210, 10%, 33%);
+    font-size:20px;
+    border:none;
+    margin-right:5px;
+}
+.downIos:hover, .downMac:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+li:hover, .fb:hover, .ig:hover, .twitter:hover{
+    cursor:pointer;
+    color:hsl(171, 66%, 44%);
+}
+@media(max-width:500px){
+    body{
+        align-items: center;
+    }
+    section{
+        max-width:350px;
+        align-items: center;
+    }
+    .section3{
+        margin-bottom:80px;
+    }
+    footer{
+        align-items: center;
+        width:100%;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    ul, .container2{
+        text-align: center;
+    }
+    .computer{
+        position: unset;
+        width:400px;
+    }
+    .tablet{
+        width:400px;
+        margin-bottom:50px;
+    }
+    .section3, .section5, .section6, .section7, footer{
+        flex-direction: column;
+    }
+
+    .logo1{
+        width:100px;
+        
+    }
+    .logo2{
+        margin-bottom:30px;
+    }
+    h1{
+        font-size:28px;
+        width:300px;
+    }
+    h2{
+        font-size:24px;
+        width:300px;
+    }
+
+    .downIos{
+        margin-bottom:10px;
+    }
+    .downIos, .downMac, p, .section3paragraphs{
+        width:300px;
+    }
+    .section5subDiv, .image{
+        margin-bottom:50px;
+    }
+    .fb, .twitter, .ig{
+        margin-left:10px;
+    }
+}
